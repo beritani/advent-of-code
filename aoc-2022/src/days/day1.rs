@@ -29,7 +29,7 @@ pub fn run() {
     println!("{}", max);
 
     // Part 2
-    
+
     let mut top_three: [i32; 3] = [0; 3];
 
     for count in elves {

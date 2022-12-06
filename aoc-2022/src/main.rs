@@ -1,6 +1,6 @@
-mod days;
+pub mod days;
 pub mod helpers;
 
 fn main() {
-    days::day1::run()
+    days::day6::run()
 }
