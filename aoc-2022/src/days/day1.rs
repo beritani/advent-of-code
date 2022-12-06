@@ -26,10 +26,25 @@ pub fn run() {
             max = count;
         }
     }
+    println!("{}", max);
 
-    println!("{}", max)
-    
     // Part 2
+    
+    let mut top_three: [i32; 3] = [0; 3];
 
+    for count in elves {
+        for (i, c) in top_three.iter().enumerate() {
+            if count > *c {
+                top_three[i] = count;
+                break
+            }
+        }
+    }
+
+    let mut total = 0;
+    for count in top_three {
+        total += count;
+    }
+    println!("{}", total);
 
 }
